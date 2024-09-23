@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--ceci est un commentaire-->
+<html lang="fr">
+    
+    <head>
+
+        <title>Portfolio de Louis Simon</title>
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="/assets/style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+                <a title="naviguation vers la section A propos" href="#Apropos">A propos</a>
+                <a title="naviguation vers la section Expériences" href="#Expériences">Mes expériences</a>
+                <a title="naviguation vers la section Articles récents" href="#articles">Mes articles récents</a>
+                <a title="naviguation vers la section Me contacter" href="#contacts">Me contacter</a>
+            </nav>
+
+            <h1>Louis SIMON</h1>
+
+            <img src="/assets/images/profil.png" width="7.5%" alt="Une photo de Louis Simon" id="profil"/> <!--photo de profil-->
+
+        </header>
+
+        <main>
+            
+            <!--section A propos-->
+            <section>
+
+                <h2 id="Apropos">A propos</h2>
+
+                <p>Jeune passioné par l'informatique, actuellement étudiant chez SupInfo, je recherche un stage de fin d'année.</p>
+
+            </section>
+
+            <!--section scolarité-->
+            <section>
+
+                <h3 id="Scolarité">Scolarité :</h3>
+
+                <ul class="liste">
+                    <li>Collège S.Signoret, Aubevoye</li>
+                    <li>Lycée A.Malraux, Gaillon</li>
+                    <li>SupInfo, Caen</li>
+                </ul>
+
+            </section>
+
+            <!--section expériences-->
+            <section>
+
+                <h3 id="Expériences">Expériences</h3>
+
+                <dl class="liste">
+                    
+                    <dt>Stage de 3ème chez Bapi automatisme</dt>
+                    <dl>-automatisation de l'éclairage aux Fransiscaines, Deauville</dl>
+                    <dl>-réparation du système de chauffage de la piscine de Ouistreham</dl>
+
+                </dl>
+
+            </section>
+
+            <!--tableau sur les compétences-->
+            <section>
+                <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Compétences</th>
+                    </tr>
+                    <tr>
+                        <th>Hard Skills</th>
+                        <th>Soft Skills</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul class="tliste">
+                                <li>Développement web (HTML,CSS)</li>
+                                <li></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="tliste">
+                                <li>Patient</li>
+                                <li>A l'écoute</li>
+                                <li>Curieux</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody> 
+                </table>
+            </section>
+        
+            <!--section Me trouver-->
+            <section>
+
+                <h3 id="Me trouver">Me trouver</h3>
+
+                <!--carte google map-->
+                <div style="width: 100%">
+
+                    <iframe title="carte de mon addresse"
+                        id="carte"
+                        width="80%"
+                        height="600"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=17%20rue%20Martin%20Luther%20King,%2014280%20Saint%20Contest+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <a title="carte de mon addresse" href="https://www.gps.ie/">gps vehicle tracker</a>
+                    </iframe>
+
+                </div>
+
+            </section>
+
+            <!--formulaire à remplir par l'utilisateur-->
+            <section>
+
+                <h3 id="contacts">Formulaire de contact :</h3>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="apikey" value="54ffaa42-fa3a-44a2-b408-d40838fa4077">
+
+                    <div>
+
+                        <label for="name">Nom :
+                            <input type="text" name="name" class="form" required autocomplete="name">
+                        </label>
+
+                    </div>
+
+                    <div>
+                        
+                        <label for="email">Email : 
+                            <input type="email" name="email" class="form" required autocomplete="email">
+                        </label>
+
+                    </div>
+
+                    <div>
+
+                        <label for="telephone">Télephone :
+                            <input type="tel" name="telephone" class="form" autocapitalize="tel">
+                        </label>
+
+                    </div>
+
+                    <div>
+
+                        <label for="commentaire">Commentaire : <br>
+                            <textarea class="form" name="commentaire" rows="5" cols="50"></textarea>
+                        </label>
+
+                    </div>
+
+                    <div>
+
+                        <label for="accepte">J'accepte d'être recontacté
+                            <input type="checkbox" class="form" name="envoyer" value="accepte" checked>
+                        </label>
+
+                    </div>
+
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <div>
+
+                        <input type="submit" value="Envoyer" id="button">
+
+                    </div>
+
+                </form>
+
+            </section>
+
+            <!--articles récents-->
+            <section>
+
+                <h3 id="articles">Mes articles récents</h3>
+
+                <div id="article">
+                    <article>
+
+                        <h4>L'Histoire</h4>
+                        <img src="/assets/images/lorem.png" alt="imgae stylisée du mot Lorem Ipsum" class="image">
+    
+                        <p>L'Histoire est une matière captivante</p>
+    
+                        <a title="Lien vers l'article sur le Lorem Ipsum" href="/articles/article1.html">En savoir plus sur le Lorem Ipsum</a>
+    
+                    </article>
+    
+                    <article>
+    
+                        <h4>War Thunder</h4>
+                        <img src="/assets/images/wart.jpg" alt="Logo du jeu War Thunder" class="image">
+    
+                        <p>War Thunder est un jeu très fun !</p>
+    
+                        <a title="Lien vers l'article sur le jeu War Thunder" href="/articles/article2.html">Une vidéo du jeu</a>
+    
+                    </article>
+    
+                    <article>
+    
+                        <h4>1 an pour gravir l'Everest</h4>
+    
+                        <img src="/assets/images/inox.jpg" alt="Photo du youtuber Inoxtag sur le Mont Everest" class="image">
+    
+                        <p>Le youtubeur Inoxtag raconte son périple jusqu'à l'Everest</p>
+    
+                        <a title="Lien vers un article sur le documentaire d'Inoxtag sur le mont Everest" href="/articles/article3.html">Plus de détails</a>
+                    </article>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+
+            <!--section Me contacter-->
+            <section>
+
+                <h3>Me contacter :</h3>
+
+                <p class="mail">
+                    louis.simon@supinfo.com <br>
+                    Télephone : 07 67 85 32 36
+                </p>
+
+            </section>
+
+        </footer>
+
+    </body>
+    
+</html>
