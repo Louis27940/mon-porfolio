@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Sofadi+One&display=swap');
+
+
+:root{
+    --aliceblue: #f0f8ff
+}
+
+
+header{
+    margin: auto;
+    font-family: "Inria Sans", sans-serif;
+    
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav>a{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+}
+
+
+body{
+    font-family: "Inria Sans", sans-serif;
+    background-image: linear-gradient(225deg, rgb(250,235,215),rgb(223,185,75));
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color:rgb(118, 0, 178);
+}
+
+
+a{
+    font-family: Verdana, sans-serif;
+}
+
+.liste, .tliste{
+    list-style-type: none;
+}
+
+.liste{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tliste{
+    margin: auto;
+    text-align: justify;
+    padding-right: 1.5rem;
+}
+
+h2,h3{
+    font-family: "Sofadi One", system-ui;
+    text-decoration: underline;
+}
+
+
+#carte{
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+td, th, tbody, thead, table{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    margin: auto;
+}
+
+#pub{
+    float: right;
+}
+
+.form, #button {
+    border-radius: 5px;
+    background-color: var(--aliceblue);
+}
+
+.form{ 
+    margin: 3px;
+}
+
+#button{
+    padding: 5px 10px 5px 10px;
+    margin-top: 8px;
+}
+
+.video, .image{
+border-radius: 10px; 
+}
+
+.image{
+    max-height: 150px;
+}
+
+.ipsum::first-letter{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.mail::before{
+    content: "Email :";
+    color: white;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+[required]{
+    color: red;
+}
+
+@media only screen and (min-width :769px){
+    #article{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 1rem;
+    }
+}
